@@ -1,0 +1,1148 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* !login or landing page----------------------------------------------- */
+
+.landingPage{
+  display: grid;
+  grid-template-areas:
+  'left left right';
+  height: 100vh;
+
+}
+
+.landingPage_descript{
+  grid-area: left;
+  background-color: rgb(160, 202, 188);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/login_left.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100%; */
+}
+
+.welcomeBox{
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  margin: 130px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.welcomeBox h1{
+  margin: 5px 0px 20px 0px;
+}
+
+.welcomeBox p{
+  font-size: 22px;
+  margin-bottom: 10px;
+  line-height: 32px;
+  /* font-weight: 500; */
+}
+
+.landingPage_login{
+  grid-area: right;
+  background-color: rgb(255, 227, 194);
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer{
+  background-color: rgba(255, 255, 255, 0.495);
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  margin: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.273),inset -20px -20px 20px rgba(255, 227, 194, 0.478);
+}
+
+.createUserTag{
+  font-size: 17px;
+  margin: 10px 10px 5px 10px;
+}
+
+#createUserBtn{
+  color: #4CAF50;
+}
+
+#createUserBtn:hover{
+  color: #469e49;
+}
+
+/* .formContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+
+.formContainer_login  label{
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+.formContainer_login  input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+#credentialChk{
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+#loginBtn {
+  background-color: #4CAF50;
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  width: 100%;
+}
+
+#loginBtn:hover {
+  background-color: #45a049;
+}
+
+#forgotPassword{
+  color: rgb(252, 24, 24);
+  margin: 10px;
+  font-size: 18px;
+}
+
+#forgotPassword:hover{
+  color: rgb(218, 0, 0);
+}
+
+/* ! ---------------------Create user page------------------------------- */
+
+.createUserTopIMG{
+  height: 150px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/blueBG.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.createUserContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.formContainer_createUser{
+  background-color: rgb(211, 211, 211);
+  padding:0px 40px 30px 40px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.formContainer_createUser form{
+  display: grid;
+  gap: 5px;
+}
+
+.formContainer_createUser form label{
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+.formContainer_createUser form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#passLengthChk{
+  color: red;
+}
+
+#passChk{
+  color:red;
+  margin-left: 2px;
+  display: none;
+}
+
+#submitCreateBtn {
+  background-color: rgb(60, 138, 216);
+  margin-top: 30px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#submitCreateBtn:hover {
+  background-color: rgb(52, 119, 187);
+}
+
+#discardCreateBtn {
+  background-color: rgb(237, 82, 64);
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  text-align: center;
+}
+
+#discardEditBtn:hover {
+  background-color: rgb(217, 75, 60);
+}
+
+/* !---------------- Navigaiton--------------------------- */
+
+.navContainer > ul, .footerContainer > ul{
+  display: flex;
+  list-style: none;
+  /* gap: 20px; */
+  justify-content: space-around;
+  /* padding:10px; */
+  font-size: 21px;
+  background-color: black;
+}
+
+.navContainer ul span, .footerContainer ul span{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.navContainer ul li, .footerContainer ul li{
+  /* background-color: white; */
+  padding: 15px;
+}
+
+.navContainer ul li:hover, .footerContainer ul li:hover, #logoutBtn:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.navContainer ul li:first-child{
+  text-shadow: none;
+  cursor:default;
+}
+
+#logoutBtn{
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 21px;
+}
+
+/* ! -------------------------- HomePage PAGE----------------------------- */
+
+.homePageContainer{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+
+  /* grid-template-areas:
+    'heroIMG heroIMG heroIMG heroIMG heroIMG heroIMG'
+    'clinicMsg clinicMsg clinicMsg clinicIMG clinicIMG clinicIMG'
+    'contact contact locationInfo locationInfo locationInfo locationInfo'
+    'therapyOffered therapyOffered therapyOffered therapyOffered therapyOffered yourTherapies'
+    'therapies therapies therapies therapies therapies therapies'; */
+  /* grid-template-columns: 1fr; */
+}
+
+.heroIMG {
+  background-color: beige;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 3;
+  position: relative;
+}
+
+.heroIMG::before {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.5)), url(../images/homepage_top.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homePageContainer > .heroIMG > h1{
+  z-index: 1;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 34px;
+  text-shadow: 0 0 10px gray;
+}
+
+
+.homePageContainer > .heroIMG > p{
+  font-size: 26px;
+  font-weight: bold;
+  z-index: 1;
+  color: white;
+}
+
+.homePage_clinicMessage{
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 10px 5px 60px rgba(0, 0, 0, 0.273),inset -30px -30px 60px rgba(255, 255, 255, 0.478);
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: auto auto 270px;
+  /* gap:20px */
+}
+
+#message1{
+  font-size: 19px;
+  grid-column: span 2;
+  padding: 20px;
+}
+
+#message2{
+  font-size: 19px;
+  grid-column: span 2;
+  grid-row-start: 2;
+  padding: 20px;
+}
+
+#message3{
+  font-size: 19px;
+  grid-column: span 2;
+  grid-row-start: 3;
+  padding: 20px;
+}
+
+.homePage_clinicMessage h3{
+  color: rgb(87, 87, 87);
+  font-size: 24px;
+}
+.homePage_clinicMessage p{
+  font-size: 21px;
+  margin-top: 5px;
+}
+
+#messageIMG{
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-row: span 3;
+  background-color: #45a049;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: url(../images/2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.contactInfo{
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.273),inset -30px -30px 20px rgba(255, 255, 255, 0.478);
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 10px 20px 20px;
+  padding: 20px;
+  /* height: 250px; */
+  grid-column: span 1;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 60px auto auto;
+  gap: 20px;
+}
+
+.contactInfo h1{
+  grid-column: span 2;
+  text-align: center;
+  color: rgb(87, 87, 87);
+}
+
+.contactInfo div{
+  /* background-color: cadetblue; */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.273),inset -2px -2px 10px rgba(255, 255, 255, 0.478);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0px 10px 0px;
+}
+
+.contactInfo span{
+  font-size: 19px;
+  /* font-weight: bold; */
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+
+.locationInfo{
+  box-shadow: 5px 10px 60px rgba(0, 0, 0, 0.273),inset -30px -30px 60px rgba(255, 255, 255, 0.478);
+  border-radius: 20px;
+  margin:0px 20px 20px 10px;
+  padding: 20px;
+  /* height: 150px; */
+  grid-column: span 2;
+  background-image: url(../images/map.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.therapiesOffered{
+  background-color: black;
+  grid-column: span 3;
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  padding-left: 20px;
+}
+
+.therapyContainer{
+  grid-column:span 3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 25px;
+  padding: 10px 20px 15px 20px;
+}
+
+.therapy{
+  /* border: 3px solid rgb(98, 98, 98); */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.273),inset -2px -2px 10px rgba(255, 255, 255, 0.478);
+  border-radius: 10px;
+  /* flex: 0 0 auto; */
+  min-height: 0px;
+  min-width: 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* background-color: #83848496; */
+}
+
+.therapy #name{
+  min-height: 30px;
+  margin: 10px;
+  padding: 5px 0px 5px 0px;
+  font-size: 23px;
+  font-weight: bold;
+  grid-column: span 2;
+}
+
+.therapy #img{
+  min-height: 300px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+  margin: 10px;
+  grid-column: span 2;
+  /* background-image: url(./therapies/massage.jpg); */
+  background-position: center;
+  background-size: cover;
+}
+.therapy #descript{
+  min-height: 100px;
+  background-color: rgb(234, 234, 234);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px 10px 0px 10px;
+  font-size: 18px;
+  grid-column: span 2;
+}
+
+.therapy #price, .therapy #duration{
+  min-height: 50px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-weight: bold;
+  color: #555555;
+}
+
+/* .therapy #duration{
+  min-height: 50px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+  margin: 10px;
+} */
+
+.therapy button{
+  min-height: 50px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+  /* margin: 10px; */
+  margin: 10px 10px 20px 10px;
+  width: calc(100% - 20px);
+  border: none;
+  grid-column: span 2;
+  background-color: #f38585;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.therapy button:hover{
+  cursor: pointer;
+  background-color: #d47474;
+}
+
+#addTherapybtn:disabled {
+  cursor: not-allowed;
+}
+
+#cartBtnContainer{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#cartBtn{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#cartBtn:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+
+
+/* ! --------------------Cart Page---------------------------- */
+
+.centerItems{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cartTopIMG{
+  height: 190px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/ocean.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 22px;
+}
+
+.cartItem {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.273),inset -2px -2px 10px rgba(255, 255, 255, 0.478);
+  display: grid;
+  height: 200px;
+  width: fit-content;
+  margin: 50px auto 0px auto;
+  grid-template-columns: 200px 150px 120px 150px ;
+  gap: 130px;
+  border-radius: 20px;
+
+}
+
+
+#cartIMG {
+  width: 300px;
+  background-color: cornflowerblue;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#cartName {
+  width: 300px;
+  font-size: 24px;
+}
+
+#cartPrice {
+  font-size: 21px;
+  margin-left: 120px;
+}
+
+#cartRemove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-right: 40px; */
+}
+
+#cartRemove button{
+  font-size: 19px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  background-color:#f08080;
+  width: 100%;
+  height: 100%;
+}
+
+#cartRemove button:hover{
+  background-color:#df7070;
+  cursor: pointer;
+}
+
+#checkoutBtnContainer{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#checkoutBtn{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#checkoutBtn:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+/* !---------------checkout page----------------------------- */
+
+.checkoutTopIMG{
+  height: 180px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/checkout.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.checkoutPageContainer{
+  display: grid;
+  grid-template-columns: auto auto auto auto  ;
+  margin-top: 70px;
+}
+
+.checkoutLeft{
+  grid-column-start: 2;
+}
+.checkoutRight{
+  grid-column-start: 3;
+}
+
+.checkoutLeft, .checkoutRight{
+  padding: 50px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.checkoutRight{
+  align-items: flex-start;
+}
+
+
+.apptDateContainer{
+  font-size: 23px;
+  padding-bottom: 30px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.apptDateContainer input {
+  /* width: 100%; */
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkoutCosts, .checkoutDetails{
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  width: max-content;
+  padding: 30px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  /* background-color: rgb(240, 240, 240); */
+  font-size: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.273),inset -10px -10px 10px rgba(255, 255, 255, 0.478);
+  color: #555555;
+}
+
+.checkoutDetails{
+  grid-template-columns: 0.6fr 1fr;
+}
+
+.costBeforeTax, .Tax, .costAfterTax{
+  margin-left: 100px;
+}
+.costAfterTax{
+  color: red;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/* .checkoutName, .checkoutAddress , .checkoutPincode, .checkoutPhone{ */
+  /* margin-left: 30px; */
+/* } */
+
+.checkoutDetails{
+  /* gap: 20px; */
+  font-size: 21px;
+}
+
+
+
+.checkoutRight{
+  justify-content: flex-start;
+}
+
+.formContainer_checkout{
+  background-color: rgb(211, 211, 211);
+  padding:0px 40px 20px 40px;
+  border-radius: 10px;
+}
+
+.formContainer_checkout form{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 200px;
+}
+
+.formContainer_checkout form label{
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+.formContainer_checkout form input, .formContainer_checkout form select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#payBtn {
+  background-color: #4CAF50;
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#payBtn:hover {
+  background-color: #45a049;
+}
+
+.formContainer_checkout span{
+  color:red;
+  text-align: center;
+  margin-top: 10px;
+  display:none;
+}
+
+/* !----------------------confirmation page--------------------------- */
+
+.confirmationTopIMG{
+  height: 200px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/trees.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.confirmationTopIMG h2{
+  font-size: 27px;
+}
+
+.confirmationPageContainer{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* .confirmationPageContainer h1 */
+
+.confirmationInfo{
+  /* background-color: aquamarine; */
+  /* width: 200px; */
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.273),inset -10px -10px 10px rgba(255, 255, 255, 0.478);
+  border-radius: 10px;
+  padding: 0px 0px 20px 20px;
+  margin-top: 20px;
+}
+
+.confirmationTherapyInfo{
+  font-size: 21px;
+  margin: 20px 0px 20px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.confirmationTherapyPrice{
+  margin-left: 80px;
+}
+
+.confirmationTax{
+  font-size: 21px;
+  margin: 40px 0px 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.confirmationTaxCost{
+  margin-left: 80px;
+}
+
+.confirmationTotal{
+  font-size: 22px;
+  color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.confirmationTotalCost{
+  margin-left: 80px;
+}
+
+.confirmationDate{
+  font-size: 23px;
+  margin: 30px;
+  padding: 20px;
+  border: 2px solid rgb(136, 214, 20);
+  border-radius: 10px;
+}
+
+.confirmationNote{
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(216, 216, 216);
+
+}
+
+#gohomePageBtnContainer{
+  margin: 15px 0px 50px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+#goHomePageBtn{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#goHomePageBtn:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+/* !--------------------User Profile Page---------------------- */
+
+.userTopIMG{
+  height: 200px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/blueBG.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.userPageContainer{
+  display: grid;
+  grid-template-columns:auto auto 450px auto ;
+  gap: 60px;
+  margin-top: 70px;
+}
+
+.userNameContianer{
+  grid-column-start: 2;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.273),inset -10px -10px 10px rgba(255, 255, 255, 0.478);
+  color: #555555;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  padding: 20px 0px 20px 0px;
+}
+
+.userNameContianer h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.userNameContianer div{
+  font-size: 24px;
+}
+
+.userInfoContainer{
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.273),inset -10px -10px 10px rgba(255, 255, 255, 0.478);
+  color: #555555;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.userInfoContainer h1{
+  margin: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.userInfoContainer h2{
+  color: rgb(71, 71, 71);
+  padding-left: 20px;
+  font-size: 23px;
+}
+.userInfoContainer div{
+  font-size: 22px;
+  padding: 2px 0px 20px 20px;
+}
+
+.userHistoryContainer{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  border-radius: 10px;
+}
+
+.userHistoryContainer h1{
+  /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.273),inset -10px -10px 10px rgba(255, 255, 255, 0.478); */
+  /* border: 2px solid black; */
+  color: #555555;
+  margin: 0px 20px 15px 20px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.therapyHistoryCont{
+  height: 250px;
+  overflow:scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.therapyHistoryName{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.273),inset -10px -10px 10px rgba(255, 255, 255, 0.478);
+  color: #555555;
+  font-size: 23px;
+  text-align: center;
+  padding: 10px 60px 10px 60px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 7px;
+  width: fit-content;
+  /* grid-column: span 2; */
+}
+
+#editUserBtnContainer{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#editUserBtn{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#editUserBtn:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+/* !-------------------edit user page-------------------------- */
+
+.editUserTopIMG{
+  height: 150px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.editUserContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.formContainer_editUser{
+  background-color: rgb(211, 211, 211);
+  padding:0px 40px 30px 40px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.formContainer_editUser form{
+  display: grid;
+  gap: 5px;
+}
+
+.formContainer_editUser form label{
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+.formContainer_editUser form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#submitEditBtn {
+  background-color: rgb(60, 138, 216);
+  margin-top: 30px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#submitEditBtn:hover {
+  background-color: rgb(52, 119, 187);
+}
+
+#discardEditBtn {
+  background-color: rgb(237, 82, 64);
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  text-align: center;
+}
+
+#discardEditBtn:hover {
+  background-color: rgb(217, 75, 60);
+}
+
+/* !-------------------No page -------------------------- */
+
+.noPageTopIMG{
+  height: 150px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#noPageBtnContainer{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#noPageBtn{
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#noPageBtn:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  scale: 1.05;
+  cursor: pointer;
+}
