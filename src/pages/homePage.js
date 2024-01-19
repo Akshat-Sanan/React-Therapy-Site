@@ -148,10 +148,8 @@ const addToCart = async(i )=>{
             <div className="homePageContainer">
 
                 <div className="heroIMG">
-                    <h1>Welcome to Elite Therapy</h1>
-                    <p>
-                        Here's to your well-being and the courage it takes to seek support. Welcome to a place where healing begins.
-                    </p>
+                    <h1>Welcome to a place where healing begins</h1>
+                    <p>Here's to your well-being and the courage it takes to seek support.</p>
                 </div>
 
                 <div className="homePage_clinicMessage">

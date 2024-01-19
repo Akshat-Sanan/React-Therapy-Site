@@ -33,23 +33,41 @@ const Navigation = () => {
     return (
         <>
             <nav className="navContainer">
-                <ul>
+                <ul className="menu">
                     <li>
                         <span id="logo">EliteTherapy</span>
                     </li>
-                    <li>
+                    <li id="navHome">
                         <Link to="/homePage">Home</Link>
                     </li>
-                    <li>
+                    <li id="navUser">
                         <Link to={`/userProfile/${userUID}`}>User Profile</Link>
                     </li>
-                    <li>
+                    <li id="navCart">
                         <Link to="/cart">Your Therapies</Link>
                     </li>
                     <li>
                         <button id="logoutBtn" onClick={()=> logoutUser()}>Logout</button>
                     </li>
+                    <li id="navMenuIcon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </li>
                 </ul>
+
+            <ul className="navMenu_mobile">
+                <li id="navHome_mobile">
+                    <Link to="/homePage">Home</Link>
+                </li>
+                <li id="navUser_mobile">
+                    <Link to={`/userProfile/${userUID}`}>User Profile</Link>
+                </li>
+                <li id="navCart_mobile">
+                    <Link to="/cart">Your Therapies</Link>
+                </li>
+            </ul>
+
             </nav>
 
         <Outlet/>

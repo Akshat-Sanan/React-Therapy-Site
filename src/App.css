@@ -255,9 +255,13 @@ a{
   cursor: pointer;
 }
 
-.navContainer ul li:first-child{
+.menu :first-child{
   text-shadow: none;
   cursor:default;
+}
+
+.navContainer > .navMenu_mobile{
+  display : none;
 }
 
 #logoutBtn{
@@ -1145,4 +1149,128 @@ a{
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
   scale: 1.05;
   cursor: pointer;
+}
+
+/* ! Responsive----------------------------------------------------------------- */
+
+@media (max-width:768px){
+
+  .landingPage{
+    display: grid;
+    grid-template-areas:
+    'left'
+    'right';
+    height: 100vh;
+  }
+
+  .welcomeBox{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .welcomeBox h1{
+    font-size: 22px;
+  }
+
+  .welcomeBox p{
+    font-size: 19px;
+  }
+
+  .loginContainer{
+    margin: 50px;
+  }
+
+  .loginContainer h1{
+    font-size: 26px;
+  }
+
+  /* !Navigation---------------------------- */
+
+  #navHome, #navUser, #navCart{
+    display: none;
+  }
+
+  .navContainer > .navMenu_mobile{
+    display : flex;
+    font-size: 18px;
+  }
+
+  #navMenuIcon{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  #navMenuIcon div{
+    background-color: white;
+    width: 40px;
+    height: 3px;
+    margin-top: 3px;
+  }
+
+  .menu{
+    justify-content: end;
+  }
+
+  .menu :first-child{
+    flex: auto;
+  }
+
+  #navMenuIcon:hover > div {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+
+  }
+
+  /* ! HomePage------------------------------------ */
+
+  .heroIMG{
+    /* height: 200px; */
+    width: 100vw;
+  }
+
+  .homePage_clinicMessage{
+    grid-template-columns: auto auto;
+    width: 100vw;
+    margin: 0px;
+  }
+
+  .contactInfo{
+    margin: 0px;
+    grid-column: span 3;
+    /* width: 100vw; */
+  }
+
+  .contactInfo div{
+    padding: 10px 5px 10px 5px;
+  }
+
+  .locationInfo{
+    grid-column: span 3;
+
+    height: 400px;
+    margin: 0px;
+  }
+
+  .therapyContainer{
+    grid-template-columns: auto;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+  .landingPage{
+    display: grid;
+    grid-template-areas:
+    'left'
+    'right';
+  }
+
+  .therapyContainer{
+    grid-template-columns: auto auto;
+  }
+
 }
