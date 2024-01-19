@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Therapy-Site/static/css/main.dd6f0496.css",
+    "main.js": "/React-Therapy-Site/static/js/main.f19c7d1d.js",
+    "static/media/homepage_top.jpg": "/React-Therapy-Site/static/media/homepage_top.7ddd3505688fd830d37e.jpg",
+    "static/media/blueBG.jpg": "/React-Therapy-Site/static/media/blueBG.49496f9132650ac842e1.jpg",
+    "static/media/checkout.jpg": "/React-Therapy-Site/static/media/checkout.831377494675f8f48b25.jpg",
+    "static/media/login_left.jpg": "/React-Therapy-Site/static/media/login_left.92931be469e11d72f163.jpg",
+    "static/media/2.jpg": "/React-Therapy-Site/static/media/2.02efc5132071234d19ea.jpg",
+    "static/media/trees.jpg": "/React-Therapy-Site/static/media/trees.36517cae1785ca2306b7.jpg",
+    "static/media/ocean.jpg": "/React-Therapy-Site/static/media/ocean.7d40b0661434dbd19de3.jpg",
+    "static/media/map.png": "/React-Therapy-Site/static/media/map.08bdefdddec813f88369.png",
+    "static/media/massage.jpg": "/React-Therapy-Site/static/media/massage.b11d91453a4e020b8d86.jpg",
+    "index.html": "/React-Therapy-Site/index.html",
+    "main.dd6f0496.css.map": "/React-Therapy-Site/static/css/main.dd6f0496.css.map",
+    "main.f19c7d1d.js.map": "/React-Therapy-Site/static/js/main.f19c7d1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd6f0496.css",
+    "static/js/main.f19c7d1d.js"
+  ]
+}
